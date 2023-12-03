@@ -6,7 +6,7 @@ export async function GET(request: any) {
 
     let url = ''
     if (address) {
-        url = `https://api.openweathermap.org/data/2.5/weather?q=${address}&appid=${process.env.API_KEY}`
+        url = `https://api.openweathermap.org/data/2.5/weather?q=${address}&appid=${process.env.API_KEY}&units=imperial`
     } 
 
     const res = await fetch(url)
