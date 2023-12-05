@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div>
       <Header></Header>
-      <Form setWeather={setWeather}></Form>
+      <Form onSubmitChange={fetchCityData}></Form>
       <Weather weather={weather}></Weather>
     </div>
   )

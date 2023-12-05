@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
 import Weather from "./Weather";
 
-const Form = (): JSX.Element => {
+const Form = ({onSubmitChange}:any): JSX.Element => {
+  const [city, setCity] = useState('')
+  console.log(`onsubmitchange: ${onSubmitChange}`)
 
   return (
     <>
       <form
         onSubmit={(event) => {
           event.preventDefault();
-          fetchCityData(city);
+          onSubmitChange(city);
         }}
       >
         <input
