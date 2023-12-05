@@ -1,7 +1,7 @@
 'use client'
-import Header from "./components/Header"
-import Form from "./components/Form"
-import Weather from "./components/Weather";
+import Header from "./components/Header/Header"
+import Form from "./components/Form/Form"
+import Weather from "./components/Weather/Weather";
 import { WeatherType } from "@/types/types";
 import { useState, useEffect } from "react";
 
@@ -30,7 +30,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <Header></Header>
       <Form onSubmitChange={fetchCityData}></Form>
       <Weather weather={weather}></Weather>

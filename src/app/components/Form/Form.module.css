@@ -1,0 +1,22 @@
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 30px;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.input {
+    width: 96%
+}
+
+.button {
+    width: 100%
+}
