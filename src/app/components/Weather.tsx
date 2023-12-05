@@ -1,4 +1,6 @@
-const Weather = ({weather}:any): JSX.Element => {
+import { WeatherType } from "@/types/types"
+
+const Weather = ({weather}:WeatherType): JSX.Element => {
     console.log(weather)
     return (
         <>

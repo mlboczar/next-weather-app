@@ -2,11 +2,12 @@
 import Header from "./components/Header"
 import Form from "./components/Form"
 import Weather from "./components/Weather";
+import { WeatherType } from "@/types/types";
 import { useState, useEffect } from "react";
 
 export default function Home() {
 
-  const [weather, setWeather] = useState(null);
+  const [weather, setWeather] = useState<WeatherType>();
 
   async function fetchCityData(cityName: string) {
     try {

@@ -1,5 +1,5 @@
-export interface Weather {
-  weather: {
+export interface WeatherType {
+  info: {
     description: string
     icon: string
   }[]
@@ -11,4 +11,8 @@ export interface Weather {
     speed: number
   }
   name: string
+}
+
+export interface Props {
+  onSubmitChange: (city: string) => void
 }
