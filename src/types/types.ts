@@ -1,16 +1,18 @@
 export interface WeatherType {
-  info: {
-    description: string
-    icon: string
-  }[]
-  main: {
-    temp: number
-    feels_like: number
+  weather: {
+    info: {
+      description: string
+      icon: string
+    }[]
+    main: {
+      temp: number
+      feels_like: number
+    }
+    wind: {
+      speed: number
+    }
+    name: string
   }
-  wind: {
-    speed: number
-  }
-  name: string
 }
 
 export interface Props {

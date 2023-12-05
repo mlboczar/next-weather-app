@@ -1,10 +1,9 @@
 import { WeatherType } from "@/types/types"
 
 const Weather = ({weather}:WeatherType): JSX.Element => {
-    console.log(weather)
     return (
         <>
-        {weather && weather.weather && weather.main ? (
+        {weather && weather.main ? (
             <>
             <h3>{weather?.name}</h3>
     

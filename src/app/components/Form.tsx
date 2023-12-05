@@ -3,7 +3,6 @@ import { Props } from "@/types/types";
 
 const Form = ({onSubmitChange}:Props): JSX.Element => {
   const [city, setCity] = useState('')
-  console.log(`onsubmitchange: ${onSubmitChange}`)
 
   return (
     <>
