@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Weather from "./Weather";
 
 const Form = ({onSubmitChange}:any): JSX.Element => {
   const [city, setCity] = useState('')

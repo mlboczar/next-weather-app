@@ -1,5 +1,4 @@
-const Weather = (props:any): JSX.Element => {
-    const { weather } = props
+const Weather = ({weather}:any): JSX.Element => {
     console.log(weather)
     return (
         <>
